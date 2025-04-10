@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F3FB">
+
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- Task title -->
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="24dp" />
+
+    <!-- Description -->
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Due date -->
+    <EditText
+        android:id="@+id/editDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (e.g. 2025-04-15)"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Task"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_500"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
